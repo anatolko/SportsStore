@@ -103,6 +103,8 @@ publish/
 csx
 *.build.csdef
 
+packages/
+
 # Windows Store app package directory
 AppPackages/
 
