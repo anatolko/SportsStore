@@ -32,7 +32,7 @@ namespace SportsStore.UnitTests
             controller.PageSize = 3;
 
 
-            ProductsListViewModel result = (ProductsListViewModel)controller.List(2).Model;
+            ProductsListViewModel result = (ProductsListViewModel)controller.List(null, 2).Model;
 
             PagingInfo pageInfo = result.PagingInfo;
             Assert.AreEqual(pageInfo.CurentPage, 2);
